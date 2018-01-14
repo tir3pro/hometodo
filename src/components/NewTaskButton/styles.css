@@ -1,0 +1,12 @@
+.board__button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #4f72fb;
+    background: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 2px 2px #ccc;
+}

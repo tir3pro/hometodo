@@ -1,0 +1,23 @@
+.hometodo__history {
+    margin-top: 80px;
+    padding: 20px 40px;
+}
+.history__title {
+    margin: 0;
+    padding: 0 5px;
+}
+.history__list {
+    padding: 0;
+}
+.history__item {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+.history__list__info {
+    padding: 1em 5px;
+    margin: 0;
+    background-color: #f4f4f4
+}
+.history__list__sub-info {
+    padding: 0 5px;
+}

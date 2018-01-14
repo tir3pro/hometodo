@@ -1,0 +1,38 @@
+.new-task__task__tasks-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.new-task__task__tasks-item {
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.new-task__task__btn {
+    color: #000;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+}
+.new-task__task__name {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.new-task__task__btn-active .new-task__task__name,
+.new-task__task__btn:hover .new-task__task__name {
+    border: 1px solid #4f72fb;
+    border-radius: 20px;
+}
+.new-task__task__name:first-letter {
+    text-transform: capitalize;
+}

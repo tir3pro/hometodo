@@ -1,0 +1,7 @@
+.dashboard__board {
+    display: inline-block;
+    width: 330px;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}

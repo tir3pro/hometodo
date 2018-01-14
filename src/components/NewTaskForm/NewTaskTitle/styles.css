@@ -1,0 +1,44 @@
+.new-task__header {
+    background-color: #f1f1f1;
+}
+.new-task__header__description__task,
+.new-task__header__description__description {
+    font-weight: 600;
+    display: inline-block;
+    padding-left: 4px;
+}
+.new-task__header__description__task:first-letter,
+.new-task__header__description__description:first-letter {
+    text-transform: lowercase;
+}
+.new-task__header__description__submit {
+    background-color: #4f72fb;
+    color: #fff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.new-task__header__description__submit-disabled {
+    position: relative;
+    background-color: #ccc;
+    color: #fff;
+}
+.new-task__header__description__submit-disabled:hover {
+    cursor: not-allowed;
+}
+.new-task__header__description__submit-disabled:hover:after {
+    display: block;
+    width: 120px;
+    padding: 2px;
+    margin-left: 5px;
+    content: 'First select all options below';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    font-size: 14px;
+    color: #fff;
+    background: #e80000;
+    border: 1px solid #f1f1f1;
+}

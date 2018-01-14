@@ -1,0 +1,21 @@
+.dashboard__new-task {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 500px;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    overflow-y: ;
+    /*animation*/
+    right: -502px;
+    transition: right 200ms ease-out;
+}
+.new-task__section {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.new-task__section__title {
+    text-transform: uppercase;
+    color: #ccc;
+    margin: 0;
+}

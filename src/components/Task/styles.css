@@ -1,0 +1,52 @@
+.board__tasks-item {
+    list-style: none;
+    padding: 20px 20px 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 2px #ccc;
+}
+.board__tasks-item__date {
+    margin: 0;
+    color: #ccc;
+}
+.board__tasks-item__title {
+    margin: 15px 0 20px;
+    font-size: 18px;
+}
+.board__tasks-item__btn {
+    padding: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.board__tasks-item__btn-edit {
+    margin-right: 5px;
+    background-color: #4f72fb;
+    color: #fff;
+}
+.board__tasks-item__btn-delete {
+    background-color: #fff;
+    color: #4f72fb;
+}
+.board__tasks-item__btn-disabled {
+    position: relative;
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}
+.board__tasks-item__btn-disabled:hover:after {
+    display: block;
+    width: 100px;
+    padding: 2px;
+    margin-top: 5px;
+    content: 'Close new task form before';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 14px;
+    color: #fff;
+    background: #e80000;
+    border: 1px solid #f1f1f1;
+}

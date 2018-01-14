@@ -1,0 +1,54 @@
+.hometodo__header,
+.header__nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+}
+.hometodo__header {
+    padding: 0 40px;
+    z-index: 10;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header__logo {
+    font-weight: 600;
+    color: #fa4d70;
+    font-size: 22px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.profile__title,
+.nav__item {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.profile__title {
+    padding: 30px 10px;
+}
+.nav__item {
+    list-style: none;
+    padding: 0 20px;
+}
+.nav__link {
+    color: #000;
+    text-decoration: none;
+    padding: 30px 0;
+}
+.nav__link-active {
+    padding-top: 27px;
+    border-top: 3px solid #000;
+}
+.header__profile {
+    margin-left: auto;
+}

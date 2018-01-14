@@ -1,0 +1,38 @@
+.profile__content {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 80px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.account__title {
+    margin-top: 0;
+}
+.account__btn,
+.profile__content__account .kep-login-facebook {
+    font-family: inherit;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-transform: none;
+    transition: background-color .3s,border-color .3s;
+    background-color: #4c69ba;
+    border: calc(.06887vw + .67769px) solid #4c69ba;
+    padding: calc(.34435vw + 13.38843px) calc(.34435vw + 18.38843px);
+    font-size: 14px;
+    font-weight: 300;
+}
+.account__avatar {
+    display: block;
+    margin: 10px auto;
+}
+.profile__title:hover + .profile__content,
+.profile__content:hover {
+    display: block;
+}
