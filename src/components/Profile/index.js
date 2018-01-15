@@ -10,7 +10,6 @@ import './styles.css';
 const Login = (props) => {
     const item = 'account';
     const responseFacebook = (response) => {
-        debugger
         if (!response.userID) return;
         props.logIn(response);
     };
