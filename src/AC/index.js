@@ -1,6 +1,7 @@
 import {
     TOGGLE_TASK_FORM, CREATE_TASK, DELETE_TASK, EDIT_FORM, SELECT_TYPE, SELECT_TASK, SELECT_LOCATION,
-    SELECT_DESCRIPTION, LOG_IN, LOG_OUT, SUBMIT_FORM, UPDATE_TASK, RESET_TASKS, OPEN_POPUP, CLOSE_POPUP
+    SELECT_DESCRIPTION, LOG_IN, LOG_OUT, SUBMIT_FORM, UPDATE_TASK, RESET_TASKS, OPEN_POPUP, CLOSE_POPUP,
+    LOAD_LOCATION_SUCCES, LOAD_LOCATION_ERROR
 } from '../constants';
 
 /*form trigger and tasks events*/
@@ -35,10 +36,32 @@ export const selectTask = task => ({
     payload: { task }
 });
 
-export const selectLocation = location => ({
-    type: SELECT_LOCATION,
-    payload: { location }
-});
+// export const selectLocation = location => ({
+//     type: SELECT_LOCATION,
+//     payload: { location }
+// });
+
+export const selectLocation = ({lat, lng}) => {
+    return (dispatch) => {
+        fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=AIzaSyC3imXrnvF11i1yoerIuKiuBi1rB8ioNxE`)
+            .then(res => {
+                if (res.status >= 400) {
+                    throw new Error(res.statusText)
+                }
+                return res.json()
+            })
+            .then(response => dispatch({
+                type: SELECT_LOCATION,
+                payload: { lat, lng, address: response.results[0].formatted_address }
+            }))
+            .catch(error => {
+                dispatch({
+                    type: LOAD_LOCATION_ERROR,
+                    payload: { error }
+                });
+            })
+    };
+};
 
 export const selectDescription = description => ({
     type: SELECT_DESCRIPTION,

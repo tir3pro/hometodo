@@ -16,3 +16,6 @@ export const LOG_OUT = 'LOG_OUT';
 
 export const OPEN_POPUP = 'OPEN_POPUP';
 export const CLOSE_POPUP = 'CLOSE_POPUP';
+
+//export const LOAD_LOCATION_SUCCES = 'LOAD_LOCATION_SUCCES';
+export const LOAD_LOCATION_ERROR = 'LOAD_LOCATION_ERROR';

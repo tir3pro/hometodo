@@ -1,10 +1,12 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers';
+import thunk from 'redux-thunk';
 
 import { getStorage, updateStorage } from '../services';
 
 const initialState = getStorage();
-const store = createStore(reducer, initialState);
+const enhancer = applyMiddleware(thunk);
+const store = createStore(reducer, initialState, enhancer);
 
 store.subscribe(() => {
     updateStorage(store);
