@@ -13,7 +13,7 @@ const Title = props => {
 
     return (
         <div className='new-task__header new-task__section'>
-            <h4 className='new-task__header__title new-task__section__title'>New Task</h4>
+            <h5 className='new-task__header__title new-task__section__title'>New Task</h5>
             <div className='new-task__header__description'>
                 <p>I need <b>a <span className = 'new-task__header__description__type'>{type}</span></b> to
                     <span className = 'new-task__header__description__task'>{task}</span>,

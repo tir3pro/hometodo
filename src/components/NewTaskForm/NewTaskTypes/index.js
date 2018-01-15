@@ -11,7 +11,7 @@ const Type = props => {
 
     return (
         <div className='new-task__type new-task__section'>
-            <h4 className='new-task__type__title new-task__section__title'>Service type</h4>
+            <h5 className='new-task__type__title new-task__section__title'>Service type</h5>
             <ul className='new-task__type__types-list'>
                 {types.map(type => {
                     const logo = taskTypes[type].logo;

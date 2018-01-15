@@ -7,7 +7,7 @@ import './styles.css';
 const Location = ({address}) => {
     return (
         <div className='new-task__location new-task__section'>
-            <h4 className='new-task__location__title new-task__section__title'>Location</h4>
+            <h5 className='new-task__location__title new-task__section__title'>Location</h5>
             <div className='new-task__location__address'>
                 <p>{address || 'Please select your location on the map'}</p>
             </div>

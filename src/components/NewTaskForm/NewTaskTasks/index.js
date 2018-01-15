@@ -29,7 +29,7 @@ const Tasks = props => {
 
     return (
         <div className='new-task__task new-task__section'>
-            <h4 className='new-task__task__title new-task__section__title'>{type} tasks</h4>
+            <h5 className='new-task__task__title new-task__section__title'>{type} tasks</h5>
             <ul className='new-task__task__tasks-list'>
                 {type ? getTasks() : getNotSelectedTypeMessage()}
             </ul>

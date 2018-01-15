@@ -1,5 +1,5 @@
-body {
-    font-family: 'PT sans', sans-serif
+body, button {
+    font-family: 'PT sans', sans-serif;
 }
 .heading {
     font-weight: 700;

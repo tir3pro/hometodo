@@ -8,7 +8,7 @@ import './styles.css';
 const Description = ({value, selectDescription}) => {
     return (
         <div className='new-task__description new-task__section'>
-            <h4 className='new-task__description__title new-task__section__title'>Task description</h4>
+            <h5 className='new-task__description__title new-task__section__title'>Task description</h5>
             <div className='new-task__description__text-area'>
                 <input
                     className = 'new-task__description__input'
