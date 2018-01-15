@@ -8,5 +8,5 @@ export default (state = {}, action) => {
         case LOG_OUT: return Object.assign({}, state, {isLoggedIn: false, userData: null});
     }
 
-    return state
+    return state;
 };

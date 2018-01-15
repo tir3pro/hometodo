@@ -3,7 +3,6 @@ import { getActiveTasks } from '../helper';
 
 export default (state = {}, action) => {
     const {type, payload} = action;
-    console.log('____' + type, payload);
 
     switch (type) {
         case CREATE_TASK: return Object.assign({}, state, {[payload.task.id]: payload.task});

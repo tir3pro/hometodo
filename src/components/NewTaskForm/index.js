@@ -20,7 +20,7 @@ const NewTaskForm = props => {
     const validate = taskForm => {
         return Object.keys(taskForm).every((prop) => {
             if (prop === 'id') return true;
-            return Boolean(taskForm[prop]);
+            return taskForm[prop];
         });
     };
     const handleSubmitTask = () => {

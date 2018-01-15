@@ -1,4 +1,4 @@
-import { LOAD_LOCATION_SUCCES, SELECT_LOCATION, LOAD_LOCATION_ERROR } from '../constants';
+import { SELECT_LOCATION, LOAD_LOCATION_ERROR } from '../constants';
 
 const initialLocationState = {
     lat: null,
@@ -6,13 +6,14 @@ const initialLocationState = {
     address: undefined
 };
 
-export default (locationState = initialLocationState, action) => {
+export default (state = initialLocationState, action) => {
+
     const {type, payload} = action;
-    debugger;
     switch (type) {
-        case SELECT_LOCATION: return Object.assign({}, locationState, payload);
-        case LOAD_LOCATION_ERROR: return Object.assign({}, locationState, {});
+        case SELECT_LOCATION: return Object.assign({}, state, payload);
+        // cover errors
+        case LOAD_LOCATION_ERROR: return Object.assign({}, state, {});
     }
 
-    return locationState
+    return state;
 };

@@ -12,5 +12,5 @@ export default (state = initialState, action) => {
         case TOGGLE_TASK_FORM: return Object.assign({}, state, {isOpen: !state.isOpen, status: status});
     }
 
-    return state
+    return state;
 };

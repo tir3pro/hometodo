@@ -1,7 +1,7 @@
 import {
     TOGGLE_TASK_FORM, CREATE_TASK, DELETE_TASK, EDIT_FORM, SELECT_TYPE, SELECT_TASK, SELECT_LOCATION,
     SELECT_DESCRIPTION, LOG_IN, LOG_OUT, SUBMIT_FORM, UPDATE_TASK, RESET_TASKS, OPEN_POPUP, CLOSE_POPUP,
-    LOAD_LOCATION_SUCCES, LOAD_LOCATION_ERROR
+    LOAD_LOCATION_ERROR
 } from '../constants';
 
 /*form trigger and tasks events*/
@@ -35,11 +35,6 @@ export const selectTask = task => ({
     type: SELECT_TASK,
     payload: { task }
 });
-
-// export const selectLocation = location => ({
-//     type: SELECT_LOCATION,
-//     payload: { location }
-// });
 
 export const selectLocation = ({lat, lng}) => {
     return (dispatch) => {

@@ -13,5 +13,5 @@ export default (state = initialState, action) => {
         case CLOSE_POPUP: return Object.assign({}, state, {isOpen: false, taskToDelete: undefined});
     }
 
-    return state
+    return state;
 };
