@@ -6,7 +6,6 @@ import Task from '../Task';
 import './styles.css';
 
 const TasksList = (props) => {
-    debugger;
     const tasks = Object.keys(props.tasks);
 
     return (

@@ -25,7 +25,7 @@ const History = props => {
                         return (
                             <li className='history__item' key={item.timeStamp}>
                                 <p className='history__list__info'>
-                                    {i + 1}. Task with <b>ID {task.id}</b> was <b>{event}</b> at <b>{time}</b>.
+                                    {i + 1}. Task with <b>ID {task.id}</b> was <b>{event}</b> on <b>{time}</b>.
                                 </p>
                                 <p className='history__list__sub-info'>
                                     Details: <b>type:</b> {task.type}, <b>task:</b> {task.task.toLowerCase()}, <b>location:</b> {task.location},

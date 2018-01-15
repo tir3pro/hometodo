@@ -10,7 +10,8 @@ import './styles.css';
 const Login = (props) => {
     const item = 'account';
     const responseFacebook = (response) => {
-        if (!response.status) return;
+        debugger
+        if (!response.userID) return;
         props.logIn(response);
     };
     const handleLogout = () => {

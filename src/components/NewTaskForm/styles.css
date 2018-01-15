@@ -5,7 +5,7 @@
     width: 500px;
     background-color: #fff;
     border-left: 1px solid #ccc;
-    overflow-y: ;
+    overflow: auto;
     /*animation*/
     right: -502px;
     transition: right 200ms ease-out;

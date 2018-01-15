@@ -16,7 +16,7 @@ const App = () => {
                     <Route path = '/dashboard' component = {Dashboard}/>
                     <Route path = '/history' component = {History}/>
                     <Route path = '/' component = {Dashboard} exact />
-                    <Route path = '*' component = {NotFound} exact />
+                    <Route path = '*' component = {NotFound} />
                 </Switch>
                 <Popup/>
             </section>
